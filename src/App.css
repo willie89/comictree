@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+* {
+  font-family: 'Slabo 27px', serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 800;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -16,7 +27,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; 
 }
 
 .App-link {
@@ -30,4 +41,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.comic_title {}
+
+.comic_image {
+  min-height: 500px;
+  max-height: 75vh;
+}
+
+.comic_image-small {
+  height: 50px;
+  width: auto;
+}
+
+.comic_navigation {
+  margin-top: 50px;
+  height: 50px;
+  font-weight: 800;
+}
+
+.comic_thumbnail_navigation {
+  text-align: justify;
+  max-width: 768px;
+  margin: 10px auto;
+  display: inline-block;
+}
+
+.comic_image-small-wrapper {
+  display: inline;
+  cursor: pointer;
+  opacity: 0.75;
+  margin: 0 5px;
+}
+
+.comic_image-small-wrapper:hover {
+  opacity: 1;
+}
+
+.comic_wrapper {
+  padding: 15px;
+  border: 2px solid #eee;
+  display: inline-block;
+  box-shadow: 10px 10px #efefef;
+}
+
+.comic_meta-data {
+  text-align: justify;
+}
+
+.hidden { 
+  opacity: 0;
+  pointer-events: none;
+}
+
+.FR {
+  float: right;
+}
+
+.FL {
+  float: left;
 }
