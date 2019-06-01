@@ -61,6 +61,10 @@ a {
   font-weight: 800;
 }
 
+.comic_navigation-button {
+  cursor: pointer;
+}
+
 .comic_thumbnail_navigation {
   text-align: justify;
   max-width: 768px;

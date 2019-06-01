@@ -35,9 +35,9 @@ class App extends Component {
 				<FeaturedComic Gallery={Gallery} currentComic={currentComic}></FeaturedComic>
 				<section className="comic_navigation">
 					<div>
-						<span className={"comic_navigation-button " + currentComic === 0 ? 'hidden' : null} onClick={this.prevComic}>newer</span>
+						<span className={currentComic === 0 ? 'hidden' : null + "comic_navigation-button"} onClick={this.prevComic}>newer</span>
 						<span className={"comic_navigation-button"} style={{margin: '0px 10em'}} onClick={this.randComic}>random</span>
-						<span className={"comic_navigation-button " + Gallery.length - 1 === currentComic ? 'hidden' : null} onClick={this.nextComic}>older</span>
+						<span className={Gallery.length - 1 === currentComic ? 'hidden' : null + "comic_navigation-button "} onClick={this.nextComic}>older</span>
 					</div>
 				</section>
 				<ThumbnailComicNavigation Gallery={Gallery} currentComic={currentComic} setComic={this.setComic}></ThumbnailComicNavigation>
