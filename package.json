@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "comic-tree",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://willie89.github.io/comictree/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
