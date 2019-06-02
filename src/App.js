@@ -13,7 +13,6 @@ class App extends Component {
 		this.navComic = this.navComic.bind(this)
 		this.state = {
 			currentComic: 0,
-			test: 'testing'
 		}
 	}
     handleKeyDown(e) {
@@ -34,13 +33,19 @@ class App extends Component {
 		return (
 			<div className="App">
 				<header>Comic Tree</header>
-				<FeaturedComic Gallery={Gallery} currentComic={currentComic}></FeaturedComic>
+				<FeaturedComic
+					featuredComic={Gallery[currentComic]}>
+				</FeaturedComic>
 				<TextComicNavigation 
 					Gallery={Gallery} 
 					currentComic={currentComic}
 					navComic={this.navComic}>
 				</TextComicNavigation>
-				<ThumbnailComicNavigation Gallery={Gallery} currentComic={currentComic} setComic={this.setComic}></ThumbnailComicNavigation>
+				<ThumbnailComicNavigation 
+					Gallery={Gallery} 
+					currentComic={currentComic} 
+					setComic={this.setComic}>
+				</ThumbnailComicNavigation>
 			</div>
 		);
 	}
@@ -59,7 +64,6 @@ class App extends Component {
 					this.setState({ currentComic: rand })
 					break
 				default:
-					break;
 			}
 		}
 	}

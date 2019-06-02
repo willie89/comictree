@@ -1,14 +1,10 @@
 import React, {Component} from 'react';
 
 class FeaturedComic extends Component {
-	constructor(props) {
-        super(props)
-	}
-	
 	render() {
 		return (
             <section className="comic_section">
-                { this.renderComic(this.props.Gallery[this.props.currentComic]) }
+                { this.renderComic(this.props.featuredComic) }
             </section>
 		);
 	}
@@ -17,7 +13,7 @@ class FeaturedComic extends Component {
         return [
             <div key={obj.date}>
                 <h2 className="comic_title">{obj.title}</h2>
-                <div className="comic_wrapper"> 
+                <div className="comic_wrapper">
                     <img className="comic_image" alt={obj.title} src={obj.image} />
                     <p className="comic_meta-data">
                         <i className="comic_subtitle">{obj.subtitle}</i>

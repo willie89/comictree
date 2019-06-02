@@ -1,26 +1,51 @@
 [
 	{
-		"date" : "2019-05-25",
-		"title": "Beans of Coffee",
-		"image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Roasted_coffee_beans.jpg",
-		"subtitle": "Coffee beans are great."
+		"date" : "2019-06-02",
+		"title": "Matthew 13",
+		"image": "http://lofi-radio.com/comictree/Matthew-13-a.jpg",
+		"thumbnail": "http://lofi-radio.com/comictree/Matthew-13-a-thumb.jpg",
+		"subtitle": "Matthew 13"
 	},
 	{
-		"date": "2019-05-14",
-		"title": "Coffee Beans",
-		"image": "https://assets.bonappetit.com/photos/5c366551f212512d0e6cefd0/16:9/w_1280,c_limit/Basically-Coffee-0219-03.jpg",
-		"subtitle": "Coffee beans are great."
+		"date": "2019-06-01",
+		"title": "The Kingdom of heaven is like treasure hidden in a field.",
+		"image": "http://lofi-radio.com/comictree/Matthew-13-44.jpg",
+		"thumbnail": "http://lofi-radio.com/comictree/Matthew-13-44-thumb.jpg",
+		"subtitle": "Matthew 13:44"
+	},
+	{
+		"date" : "2019-05-25",
+		"title": "Mustard Seed",
+		"image": "http://lofi-radio.com/comictree/Matthew-13-33.jpg",
+		"thumbnail": "http://lofi-radio.com/comictree/Matthew-13-33-thumb.jpg",
+		"subtitle": "Matthew 13:33"
+	},
+	{
+		"date" : "2019-05-22",
+		"title": "Matthew 13:12",
+		"image": "http://lofi-radio.com/comictree/Matthew-13-12.jpg",
+		"thumbnail": "http://lofi-radio.com/comictree/Matthew-13-12-thumb.jpg",
+		"subtitle": "Matthew 13:12"
+	},
+	{
+		"date": "2019-05-21",
+		"title": "The kingdom of heaven is like  a merchant looking for fine pearls.",
+		"image": "http://lofi-radio.com/comictree/Matthew-13_45.jpg",
+		"thumbnail": "http://lofi-radio.com/comictree/Matthew-13_45-thumb.jpg",
+		"subtitle": "Matthew 13:45"
 	},
 	{
 		"date" : "2019-04-25",
-		"title": "Coffee Kernels",
-		"image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Roasted_coffee_beans.jpg",
-		"subtitle": "Coffee beans are great."
+		"title": "Pearl of great price",
+		"image": "http://lofi-radio.com/comictree/Matthew-13.jpg",
+		"thumbnail": "http://lofi-radio.com/comictree/Matthew-13-thumb.jpg",
+		"subtitle": "Matthew:13"
 	},
 	{
-		"date": "2019-04-16",
-		"title": "Tasty Brown Beans",
-		"image": "https://assets.bonappetit.com/photos/5c366551f212512d0e6cefd0/16:9/w_1280,c_limit/Basically-Coffee-0219-03.jpg",
-		"subtitle": "Coffee beans are great."
+		"date" : "2019-04-22",
+		"title": "Plank in your eye",
+		"image": "http://lofi-radio.com/comictree/Matthew-7-5.jpg",
+		"thumbnail": "http://lofi-radio.com/comictree/Matthew-7-5-thumb.jpg",
+		"subtitle":  "Matthew 7:5"
 	}
 ]
