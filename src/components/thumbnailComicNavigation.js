@@ -11,7 +11,7 @@ class ThumbnailComicNavigation extends Component {
 
 	renderComicNavigation = (obj,i) => {
 		return [
-			<div onClick={() => this.props.setComic(i)} key={i} className="comic_image-small-wrapper">
+			<div onClick={() => this.props.setComic(i)} key={i} className={(this.props.currentComic === i ? "selected" : "") + " comic_image-small-wrapper"}>
 				<img className="comic_image-small" alt={obj.title} src={obj.thumbnail} />
 			</div>
 		]

@@ -1,5 +1,9 @@
+html {
+  background: url('http://lofi-radio.com/comictree/bg.jpg')
+}
+
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
 * {
@@ -25,18 +29,18 @@ a {
 .comic_title {}
 
 .comic_image {
-  min-height: 500px;
   max-height: 75vh;
+  max-width: 80vw;
 }
 
 .comic_image-small {
   height: 114px;
   width: auto;
+  display: block;
 }
 
 .comic_navigation {
-  margin-top: 50px;
-  height: 50px;
+  padding: 40px 0px;
   font-weight: 800;
 }
 
@@ -49,17 +53,32 @@ a {
 }
 
 .comic_thumbnail_navigation {
-  text-align: justify;
   max-width: 768px;
   margin: 10px auto;
   display: inline-block;
 }
 
 .comic_image-small-wrapper {
-  display: inline;
+  display: inline-block;
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.33;
   margin: 0 5px;
+  border: 6px solid transparent;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+}
+
+.comic_image-small-wrapper.selected {
+  opacity: 1;
+  border: 6px solid #efefef;
+}
+
+.comic_image-small-wrapper.selected:hover {
+  opacity: 1;
+  border: 6px solid #eee;
 }
 
 .comic_image-small-wrapper:hover {
@@ -71,6 +90,7 @@ a {
   border: 2px solid #eee;
   display: inline-block;
   box-shadow: 10px 10px #efefef;
+  background-color: white;
 }
 
 .comic_meta-data {
