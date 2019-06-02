@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import FeaturedComic from './components/featuredComic';
 import ThumbnailComicNavigation from './components/thumbnailComicNavigation';
+import TextComicNavigation from './components/textComicNavigation';
 import './App.css';
 import Gallery from './images.json';
 
@@ -9,6 +10,7 @@ class App extends Component {
 		super(props)
 		this.handleKeyDown = this.handleKeyDown.bind(this)
 		this.setComic = this.setComic.bind(this)
+		this.navComic = this.navComic.bind(this)
 		this.state = {
 			currentComic: 0,
 			test: 'testing'
@@ -33,29 +35,33 @@ class App extends Component {
 			<div className="App">
 				<header>Comic Tree</header>
 				<FeaturedComic Gallery={Gallery} currentComic={currentComic}></FeaturedComic>
-				<section className="comic_navigation">
-					<div>
-						<span className={currentComic === 0 ? 'hidden' : null + "comic_navigation-button"} onClick={this.prevComic}>newer</span>
-						<span className={"comic_navigation-button"} style={{margin: '0px 10em'}} onClick={this.randComic}>random</span>
-						<span className={Gallery.length - 1 === currentComic ? 'hidden' : null + "comic_navigation-button "} onClick={this.nextComic}>older</span>
-					</div>
-				</section>
+				<TextComicNavigation 
+					Gallery={Gallery} 
+					currentComic={currentComic}
+					navComic={this.navComic}>
+				</TextComicNavigation>
 				<ThumbnailComicNavigation Gallery={Gallery} currentComic={currentComic} setComic={this.setComic}></ThumbnailComicNavigation>
 			</div>
 		);
 	}
 
-	nextComic = () => {
-		this.setState({ currentComic: this.state.currentComic + 1 })
-	}
-
-	prevComic = () => {
-		this.setState({ currentComic: this.state.currentComic - 1 })
-	}
-
-	randComic = () => {
-		let rand = Math.floor(Math.random() * (Gallery.length - 1))
-		this.setState({ currentComic: rand })
+	navComic = (navigation) => {
+		if (navigation !== null) {
+			switch (navigation) {
+				case 'prev':
+					this.setState({ currentComic: this.state.currentComic - 1 })
+					break
+				case 'next':
+					this.setState({ currentComic: this.state.currentComic + 1 })
+					break
+				case 'rand':
+					let rand = Math.floor(Math.random() * (Gallery.length - 1))
+					this.setState({ currentComic: rand })
+					break
+				default:
+					break;
+			}
+		}
 	}
 
 	setComic = (num) => {
