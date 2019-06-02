@@ -18,9 +18,9 @@ class App extends Component {
     handleKeyDown(e) {
 		const { currentComic } = this.state
 		if (e.keyCode === 39 && Gallery.length - 1 !== currentComic) {
-			this.nextComic()
+			this.navComic('next')
 		} else if (e.keyCode === 37 && currentComic !== 0) {
-			this.prevComic()
+			this.navComic('prev')
 		}
 	}
 
@@ -32,10 +32,11 @@ class App extends Component {
 		const { currentComic } = this.state
 		return (
 			<div className="App">
-				<header>Comic Tree</header>
+				<header></header>
 				<FeaturedComic
 					featuredComic={Gallery[currentComic]}>
 				</FeaturedComic>
+				<img style={{'display': 'none'}} src={Gallery[currentComic + 1] ? Gallery[currentComic+1].image : ''} alt=""/>
 				<TextComicNavigation 
 					Gallery={Gallery} 
 					currentComic={currentComic}
