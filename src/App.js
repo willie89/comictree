@@ -49,9 +49,10 @@ class App extends Component {
         onSwipeStart={this.onSwipeStart}
         onSwipeMove={this.onSwipeMove}
         onSwipeEnd={this.onSwipeEnd}>
-				<FeaturedComic
-					featuredComic={Gallery[currentComic]}>
-				</FeaturedComic>
+					<FeaturedComic
+						featuredComic={Gallery[currentComic]}
+						navComic={this.navComic}>
+					</FeaturedComic>
 				</Swipe>
 				<img style={{'display': 'none'}} src={Gallery[currentComic + 1] ? Gallery[currentComic+1].image : ''} alt=""/>
 				<TextComicNavigation 

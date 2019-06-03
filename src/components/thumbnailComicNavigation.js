@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class ThumbnailComicNavigation extends Component {
 	render() {
         return [
-            <section className="comic_thumbnail_navigation">
+            <section className="comic_thumbnail_navigation" key="1">
                 { this.props.Gallery.map((obj, i) => this.renderComicNavigation(obj, i)) }
             </section>
         ]
