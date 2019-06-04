@@ -1,6 +1,6 @@
 {
   "name": "comic-tree",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://willie89.github.io/comictree/",
   "dependencies": {
@@ -33,7 +33,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "Comictree, everyday bible comics.",
   "main": "index.js",
   "devDependencies": {},
   "author": "",
