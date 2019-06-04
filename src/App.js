@@ -3,7 +3,7 @@ import FeaturedComic from './components/featuredComic';
 import ThumbnailComicNavigation from './components/thumbnailComicNavigation';
 import TextComicNavigation from './components/textComicNavigation';
 import Swipe from 'react-easy-swipe';
-import './App.css';
+import './App.css'; 
 import Gallery from './images.json';
 
 class App extends Component {
