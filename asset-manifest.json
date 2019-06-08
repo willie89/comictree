@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/comictree/static/css/main.c7181fde.chunk.css",
-    "main.js": "/comictree/static/js/main.db35c02f.chunk.js",
-    "main.js.map": "/comictree/static/js/main.db35c02f.chunk.js.map",
+    "main.css": "/comictree/static/css/main.e41bfd78.chunk.css",
+    "main.js": "/comictree/static/js/main.bcae140e.chunk.js",
+    "main.js.map": "/comictree/static/js/main.bcae140e.chunk.js.map",
     "runtime~main.js": "/comictree/static/js/runtime~main.377105fe.js",
     "runtime~main.js.map": "/comictree/static/js/runtime~main.377105fe.js.map",
     "static/js/2.568a6565.chunk.js": "/comictree/static/js/2.568a6565.chunk.js",
     "static/js/2.568a6565.chunk.js.map": "/comictree/static/js/2.568a6565.chunk.js.map",
     "index.html": "/comictree/index.html",
-    "precache-manifest.ae1ee43167acb9782de8c565ad7cf98b.js": "/comictree/precache-manifest.ae1ee43167acb9782de8c565ad7cf98b.js",
+    "precache-manifest.4bd9c12d70f8ca5501c193df5f3ef69f.js": "/comictree/precache-manifest.4bd9c12d70f8ca5501c193df5f3ef69f.js",
     "service-worker.js": "/comictree/service-worker.js",
-    "static/css/main.c7181fde.chunk.css.map": "/comictree/static/css/main.c7181fde.chunk.css.map"
+    "static/css/main.e41bfd78.chunk.css.map": "/comictree/static/css/main.e41bfd78.chunk.css.map"
   }
 }
